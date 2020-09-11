@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/wardeobeFragment">
+
+    <fragment
+        android:id="@+id/wardeobeFragment"
+        android:name="com.andromesh.wardrobe.ui.fragments.WardeobeFragment"
+        android:label="WardeobeFragment" >
+        <action
+            android:id="@+id/action_wardeobeFragment_to_myFavourites"
+            app:destination="@id/myFavourites" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFavourites"
+        android:name="com.andromesh.wardrobe.ui.fragments.MyFavourites"
+        android:label="MyFavourites" />
+</navigation>
